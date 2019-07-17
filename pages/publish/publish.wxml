@@ -1,0 +1,38 @@
+<view wx:if="{{!success}}">
+<view class="row">
+  <label class="title">我的地址</label>
+  <view class="info" bindtap="chickAdress">{{address}}</view>
+</view>
+<view class="row">
+  <label class="title">类型</label>
+  <view class="info">
+  <radio-group bindchange="handleTypeChange">
+  <label>
+    <radio value="buy" checked="true" />购买
+     <radio value="sell" />出售
+  </label>
+</radio-group>
+  </view>
+</view>
+<view class="row">
+  <label class="title">说明</label>
+  <view class="info">
+  <input class="info-input" placeholder="填写您的具体需求" bindinput="handleContactChange"></input>
+  </view>
+</view>
+<view class="row">
+  <label class="title">联系发布</label>
+  <view class="info">
+   <input class="info-input" placeholder="填写您的联系方式" bindinput="handleMassageChange"></input>
+  </view>
+</view>
+<view class="sumbit-button" bindtap="handleSumbit">发布信息</view>
+</view>
+
+<view wx:else class="congratulation">
+<view class="success">
+<icon type="success" size="16" class="success_icon"/>
+恭喜你，发布成功
+</view>
+<button type="primary" class="backhome-button" bindtap="handleBack"> 返回首页 </button>
+</view>

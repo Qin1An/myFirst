@@ -1,0 +1,26 @@
+<view >
+<view class="row">
+  <label class="title">我的地址</label>
+  <view class="info">{{address}}</view>
+</view>
+<view class="row">
+  <label class="title">类型</label>
+  <view class="info">
+  <radio-group bindchange="handleTypeChange">
+  {{type}}
+  </radio-group>
+  </view>
+</view>
+<view class="row">
+  <label class="title">说明</label>
+  <view class="info">
+  {{massage}}
+  </view>
+</view>
+<view class="row">
+  <label class="title">联系发布</label>
+  <view class="info">
+   {{contact}}
+  </view>
+</view>
+</view>

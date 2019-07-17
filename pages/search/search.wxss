@@ -1,0 +1,43 @@
+page{
+  background: #eee;
+}
+.search-header{
+  height: 44px;
+  background: #03bbd5;
+  padding-top: 7px;
+}
+.search-btn{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 60px;
+  line-height: 44px;
+  text-align: center;
+  color: #fff;
+}
+.search-input{
+  margin-right: 60px;
+  background: #fff;
+  margin: 0 60px 0 10px;
+  height: 30px;
+  border-radius: 4px;
+  padding: 0 5px;
+}
+.item{
+  background: #fff;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.address-type{
+  color: #ff9700;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.item-massage{
+  font-size: 12px;
+  color: #777;
+}
+.item.contact{
+  font-size: 12px;
+  color: #777;
+}

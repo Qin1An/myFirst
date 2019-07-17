@@ -1,0 +1,19 @@
+ {
+  "pages": [
+    "pages/index/index",
+    "pages/search/search",
+    "pages/publish/publish",
+    "pages/detail/detail"
+    
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#03bbd5"
+  }, 
+
+  "permission": {
+    "scope.userLocation": {
+      "desc": "用于展示你当前位置信息"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

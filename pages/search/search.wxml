@@ -1,0 +1,18 @@
+<view class="search-header">
+<input class="search-input" bindinput="handleInput"></input>
+<view class="search-btn" bindtap="handleSearch">搜索</view>
+</view>
+
+<view>
+<view wx:for = "{{list}}" wx:key="{{item._id}}" class="item" id="{{item._id}}" bindtap="handleItemTap">
+<view class="address-type">
+{{item.address}} ({{item.type === "buy" ? "购买":"出售"}})
+</view>
+<view class="item-massage">
+{{item.massage}}
+</view>
+<view class="item.contact">
+联系方式：{{item.contact}}
+</view>
+</view>
+</view>
