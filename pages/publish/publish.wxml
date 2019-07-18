@@ -17,13 +17,13 @@
 <view class="row">
   <label class="title">说明</label>
   <view class="info">
-  <input class="info-input" placeholder="填写您的具体需求" bindinput="handleContactChange"></input>
+  <input class="info-input" placeholder="填写您的具体需求" bindinput="handleMassageChange"></input>
   </view>
 </view>
 <view class="row">
   <label class="title">联系发布</label>
   <view class="info">
-   <input class="info-input" placeholder="填写您的联系方式" bindinput="handleMassageChange"></input>
+   <input class="info-input" placeholder="填写您的联系方式" bindinput="handleContactChange"></input>
   </view>
 </view>
 <view class="sumbit-button" bindtap="handleSumbit">发布信息</view>

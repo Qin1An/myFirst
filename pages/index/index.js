@@ -45,7 +45,6 @@ Page({
       _openid: 'oi6zj5F8WfeS22bz8DVZSZ8nOzss' // 填入当前用户 openid
     }).get({
       success: function (res) {
-        console.log(res.data)
         const arr = res.data.map((value,index)=> {
           return {
             iconPath: "/resources/"+ value.type +".png",
@@ -57,7 +56,6 @@ Page({
           }
           
         })
-        console.log(arr);
         _this.setData({
           markers: arr
         })
@@ -74,7 +72,6 @@ Page({
   },
 
   handleMarkerTap(e) {
-    console.log(e);
     wx.navigateTo({
       url: '/pages/detail/detail?id='+ e.markerId
     })

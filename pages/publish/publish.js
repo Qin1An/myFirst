@@ -16,8 +16,6 @@ Page({
           latitude: res.latitude,
           longitude: res.longitude
         });
-        console.log(_this.saveAdress)
-        console.log(res)
         _this.setData({
           address: res.address
         })
@@ -100,10 +98,11 @@ Page({
     wx.navigateBack({
       
     })
+  },
+  onShareAppMessage: function (res) {
+    return {
+      title: '宠物交易平台信息发布',
+      path: '/pages/index/index'
+    }
   }
-
-
-
-
-
 })
